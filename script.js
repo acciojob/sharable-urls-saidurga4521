@@ -7,12 +7,12 @@ btn.addEventListener('click',()=>{
 	let name=nameE1.value;
 	let year=yearE1.value;
 	if(name && year){
-		urlE1.innerHTML=`https://localhost:8080/name=${name}&year=${year}`
+		urlE1.innerHTML=`https://localhost:8080/?name=${name}&year=${year}`
 	}else if(name){
-	    urlE1.innerHTML=`https://localhost:8080/name=${name}`	
+	    urlE1.innerHTML=`https://localhost:8080/?name=${name}`	
 	}else if(year){
-		urlE1.innerHTML=`https://localhost:8080/year=${year}`
+		urlE1.innerHTML=`https://localhost:8080/?year=${year}`
 	}else{
-		urlE1.innerHTML=`https://localhost:8080/`
+		urlE1.innerHTML=`https://localhost:8080/?`
 	}
 })
